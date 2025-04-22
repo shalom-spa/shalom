@@ -578,4 +578,174 @@
                 <ul>
                     <li>Aliviar dolores por estrés o sobrecarga.</li>
                     <li>Corregir posturas dañinas.</li>
-                    <li>Recuperar flexibil
+                    <li>Recuperar flexibilidad rápidamente.</li>
+                </ul>
+                <p>🎁Sesión desde S/ 80 la hora.</p>
+                <p>"(💲✨🔥)¿Necesitas más de una sesión? Consúltanos hoy y te armamos un plan con beneficios exclusivos."</p>
+                <p>⏳ ¡No esperes más!</p>
+            </div>
+
+            <button class="service-button" data-service="servicio5">
+                 ✨Masaje deportivo
+            </button>
+            <div id="servicio5" class="service-description">
+                <h3>Terapia de Drenaje</h3>
+                <p>Masaje Deportivo:</p>
+                <p>Optimiza tu Rendimiento💪</p>
+                <ul>
+                    <li>Técnica terapéutica enfocada en prevenir lesiones, acelerar la recuperación muscular y potenciar el rendimiento físico⛹️.</li>
+                    <li>Ideal para deportistas y personas activas.</li>
+                </ul>
+                <p>¿Por qué usarlo?</p>
+                <ul>
+                    <li>✅ Reduce tensiones y mejora flexibilidad.</li>
+                    <li>✅ Acelera la recuperación post-entreno.</li>
+                    <li>✅ Prepara músculos antes del esfuerzo.</li>
+                    <li>✅ Alivia el estrés físico y mental.</li>
+                </ul>
+                <p>🎁Sesión desde S/ 80 la hora.</p>
+                <p>¡Pregunta por nuestros packs o descuentos para sesiones recurrentes!"</p>
+                <p>"(💲✨🔥)¿Necesitas más de una sesión? Consúltanos hoy y te armamos un plan con beneficios exclusivos."</p>
+                <p>⏳ ¡No esperes más!</p>
+            </div>
+
+            <button class="service-button" data-service="servicio6">
+                ✨ Terapia y Rehabilitacion
+            </button>
+            <div id="servicio6" class="service-description">
+                <h3>Terapia con Ventosas</h3>
+                <p>Terapia de Rehabilitación</p>
+                <ul>
+                    <li>Programas personalizados para recuperar fuerza.</li>
+                    <li>💪movilidad y funcionalidad tras lesiones🚶‍♀️, cirugías o eventos traumáticos.</li>
+                </ul>
+                <p>✅ Incluye:</p>
+                <ul>
+                    <li>Ejercicios guiados y masajes especializados.</li>
+                    <li>Uso de tecnología (ultrasonido, electroestimulación).</li>
+                    <li>Seguimiento con fisioterapeutas certificados.</li>
+                </ul>
+                <p>🎁Sesión desde S/ 80 la hora.</p>
+                <p>¡Pregunta por nuestros packs o descuentos para sesiones recurrentes!"</p>
+                <p>"(💲✨🔥)¿Necesitas más de una sesión?</p>
+                <p>Consúltanos hoy y te armamos un plan con beneficios exclusivos."</p>
+                <p>⏳ ¡No esperes más! </p>
+            </div>
+        </div>
+
+        <div class="gallery">
+            <img src="https://i.ibb.co/WvkDrPs9/IMG-20240306-WA0043.jpg" alt="Sesión de masaje terapéutico">
+            <img src="https://i.ibb.co/tThcRDHX/Screenshot-20240614-193758-3.png" alt="Equipo profesional">
+            <img src="https://i.ibb.co/q3GfgG5r/IMG-20240226-WA0143.jpg" alt="Sala de tratamiento">
+            <img src="https://i.ibb.co/RTcY6BXd/Screenshot-20240614-193724-3.png" alt="Técnicas avanzadas">
+        </div>
+
+        <div class="social-buttons">
+            <a href="https://www.facebook.com/share/1BXPggLbpp/" target="_blank" class="facebook">
+                <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="https://www.instagram.com/yeimmycoromoto_silva__?utm_source=qr&igsh=Y2l5YnR4Y2RvdTJv" target="_blank" class="instagram">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="TU_ENLACE_TIKTOK" target="_blank" class="tiktok">
+                <i class="fab fa-tiktok"></i>
+            </a>
+        </div>
+
+        <div class="address-section">
+            <p class="address-text">
+                📍 Jirón Coronel Manuel Gómez 205<br>
+                Lince, Lima<br>
+                Perú
+            </p>
+            <a href="https://www.google.com/maps/search/?api=1&query=Jiron+coronel+manuel+gomez+205+lince+Lima+Peru" 
+               class="map-link" 
+               target="_blank">
+                <i class="fas fa-map-marker-alt"></i> Ver en Google Maps
+            </a>
+            
+            <a href="https://wa.me/51973834229?text=¡Hola!%20Bienvenido%20a%20SHALOM.%20¿En%20qué%20podemos%20ayudarle%20hoy?" 
+               class="whatsapp-button" 
+               target="_blank">
+                <i class="fab fa-whatsapp"></i> Agendar ahora
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Control de descripción expandible
+        const readMoreBtn = document.querySelector('.read-more-btn');
+        const descriptionText = document.querySelector('.description-text');
+
+        readMoreBtn.addEventListener('click', function(e) {
+            e.stopPropagation();
+            descriptionText.classList.toggle('expanded');
+            this.textContent = descriptionText.classList.contains('expanded') ? 'Leer menos' : 'Leer más';
+        });
+
+        // Control de Hot Button
+        const hotButton = document.querySelector('.hot-button');
+        const hotOffer = document.querySelector('.hot-offer');
+
+        hotButton.addEventListener('click', function(e) {
+            e.stopPropagation();
+            const isActive = this.classList.toggle('active');
+            hotOffer.style.display = isActive ? 'block' : 'none';
+            
+            if(isActive) {
+                document.querySelectorAll('.service-description').forEach(desc => {
+                    desc.style.display = 'none';
+                });
+                document.querySelectorAll('.service-button').forEach(btn => {
+                    btn.classList.remove('active');
+                });
+                hotOffer.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            }
+        });
+
+        // Control de servicios
+        document.querySelectorAll('.service-button').forEach(button => {
+            button.addEventListener('click', function(e) {
+                e.stopPropagation();
+                const serviceId = this.dataset.service;
+                const description = document.getElementById(serviceId);
+                
+                document.querySelectorAll('.service-description').forEach(desc => {
+                    desc.style.display = 'none';
+                });
+                
+                document.querySelectorAll('.service-button').forEach(btn => {
+                    btn.classList.remove('active');
+                });
+
+                hotButton.classList.remove('active');
+                hotOffer.style.display = 'none';
+
+                if(description.style.display === 'none') {
+                    description.style.display = 'block';
+                    this.classList.add('active');
+                    description.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
+            });
+        });
+
+        // Cerrar todo al hacer clic fuera
+        document.addEventListener('click', () => {
+            document.querySelectorAll('.service-description').forEach(desc => {
+                desc.style.display = 'none';
+            });
+            document.querySelectorAll('.service-button').forEach(btn => {
+                btn.classList.remove('active');
+            });
+            hotButton.classList.remove('active');
+            hotOffer.style.display = 'none';
+        });
+
+        // Botón flotante
+        window.addEventListener('scroll', () => {
+            const floatingBtn = document.querySelector('.floating-button');
+            floatingBtn.style.display = window.scrollY > 300 ? 'flex' : 'none';
+        });
+    </script>
+    </body>
+</html>
