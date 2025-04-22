@@ -37,6 +37,19 @@
             object-fit: cover;
         }
 
+        .header-container h1 {
+            font-size: 2.2em;
+            margin: 10px 0 5px;
+            color: #fff;
+        }
+
+        .header-container h2 {
+            font-size: 1.8em;
+            margin: 0 0 15px;
+            color: #e8f5e9;
+            font-family: 'Arial', sans-serif;
+        }
+
         .slogan {
             font-style: italic;
             color: #e8f5e9;
@@ -47,14 +60,14 @@
         .content-container {
             padding: 20px;
             max-width: 1200px;
-            margin:  auto;
+            margin: auto;
         }
 
         .services {
             display: flex;
             flex-direction: column;
             align-items: center;
-            margin: 15px 0 2px 
+            margin: 15px 0 2px;
         }
 
         .service-button {
@@ -161,14 +174,14 @@
             background: #25d366;
             color: white;
             padding: 12px 25px;
-            border-radius: 30px;
+            border-radius: 25px;
             text-decoration: none;
-            display: inline-flex;
-            align-items: center;
-            gap: 10px;
-            font-size: 16px;
-            transition: all 0.3s ease;
+            display: block;
+            width: fit-content;
+            margin: 15px auto 0;
+            font-size: 0.95em;
             box-shadow: 0 4px 15px rgba(37,211,102,0.3);
+            transition: all 0.3s ease;
         }
 
         .whatsapp-button:hover {
@@ -199,59 +212,55 @@
             transform: scale(1.1);
         }
 
-        @media (max-width: 768px) {
-            .service-button {
-                width: 100%;
-                max-width: 280px;
-            }
-            
-            .service-description {
-                width: 90%;
-            }
-
-            .social-buttons a {
-                width: 45px;
-                height: 45px;
-                font-size: 20px;
-                margin: 0 8px;
-            }
+        .address-section {
+            background: linear-gradient(145deg, #80cbc4, #4db6ac);
+            padding: 25px;
+            margin: 40px auto;
+            border-radius: 15px;
+            text-align: center;
+            color: white;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            max-width: 600px;
         }
-    </style>
-</head>
-<body>
-    <div class="floating-button" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">
-        <i class="fas fa-arrow-up"></i>
-    </div>
 
-    <div class="header-container"img src="<a href="https://ibb.co/7dbFTMkV"><img src="https://i.ibb.co/7dbFTMkV/logo-circular.png" alt="logo-circular" border="0" /></a>
-    <p>Fisioterapeuta 
-        𝒀𝒆𝒊𝒎𝒎𝒚 𝑺𝒊𝒍𝒗𝒂</i>
-    <p class="slogan">Transformando tu salud a través del cuidado terapéutico integral</p>
-    </div>
+        .address-text {
+            font-size: 1.1em;
+            margin-bottom: 15px;
+            line-height: 1.6;
+        }
 
-    <div class="content-container">
-        <!DOCTYPE html>
-<html lang="es">
-<head>
-    <!-- 
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <!-- ... (metadatos y enlaces previos se mantienen igual) ... -->
-    <style>
-        /* ... (estilos anteriores se mantienen igual) ... */
+        .map-link {
+            display: inline-block;
+            background: rgba(255,255,255,0.9);
+            color: #4db6ac;
+            padding: 10px 20px;
+            border-radius: 25px;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            border: 2px solid #4db6ac;
+            font-weight: bold;
+            font-size: 0.9em;
+            margin: 10px 0;
+        }
 
-        /* Nuevos estilos para la descripción */
+        .map-link:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 15px rgba(255,255,255,0.3);
+            background: #4db6ac;
+            color: white;
+        }
+
         .description-container {
             background: rgba(255,255,255,0.95);
             border: 2px solid #80cbc4;
             border-radius: 35px;
             padding: 25px;
-            margin-bottom: 10
-            max-width: 100px;
+            margin: 20px auto;
+            max-width: 800px;
             position: relative;
         }
-           .description-text {
+
+        .description-text {
             position: relative;
             max-height: 120px;
             overflow: hidden;
@@ -266,8 +275,8 @@
             content: "";
             position: absolute;
             bottom: 0;
-            left: 20;
-            right:30;
+            left: 0;
+            right: 0;
             height: 50px;
             background: linear-gradient(to bottom, rgba(255,255,255,0), rgba(255,255,255,1));
             transition: opacity 0.3s ease;
@@ -293,66 +302,10 @@
             transform: translateY(-2px);
             box-shadow: 0 4px 15px rgba(77,182,172,0.3);
         }
-    </style>
-</head>
-<body>
-    <!-- ... (encabezado y botón flotante se mantienen igual) ... -->
-
-    <div class="content-container">
-        <!-- Nueva sección de descripción -->
-        <div class="description-container">
-        <div class="description-text">
-            
-    <h2 style="color: #4db6ac; margin-top: 0;">Shalom - Masajes Terapéuticos Especializados en Bienestar Muscular</h2>
-    <p>En Shalom, entendemos que el cuerpo trabaja día a día, y los músculos merecen atención profesional para recuperar su vitalidad. Nos enfocamos en aliviar tensiones, liberar contracturas y mejorar la funcionalidad muscular, utilizando técnicas terapéuticas diseñadas para devolverle a tu cuerpo la fuerza y flexibilidad que necesita.</p>
-    
-    <div class="expandable-content">
-        <h3 style="color: #4db6ac;">Beneficios Clave de Nuestros Masajes:</h3>
-        <ul>
-            <li>✔️ <strong>Alivio de Dolores Musculares:</strong> Tratamos zonas sobrecargadas por el estrés, malas posturas o actividad física intensa.</li>
-            <li>✔️ <strong>Recuperación Acelerada:</strong> Ideal para deportistas: reducimos rigidez y favorecemos reparación de tejidos.</li>
-            <li>✔️ <strong>Mejora de la Movilidad:</strong> Liberamos adherencias y aumentamos el rango de movimiento.</li>
-            <li>✔️ <strong>Prevención de Lesiones:</strong> Trabajamos en elasticidad muscular y correcta alineación.</li>
-        </ul>
-        
-        <p>Combinamos métodos como masaje descontracturante, técnicas de liberación miofascial y estiramientos asistidos, adaptándonos a tus necesidades específicas.</p>
-        
-        <p>¿Listo para sentir la diferencia? Agenda tu sesión en Shalom y transforma el cuidado muscular en una prioridad. Porque un cuerpo sin tensiones es sinónimo de vida en plenitud.</p>
-    </div>
-</div>
-                <button class="read-more-btn">Leer más</button>
-        </div>
-          
- </div>
-
-        <!-- Sección de servicios existente -->
-        <div class="services">
-            <!-- ... (botones de servicios existentes se mantienen igual) ... -->
-        </div>
-
-        <!-- ... (resto del contenido se mantiene igual) ... -->
-    </div>
-
-    <script>
-        // Script para controlar la descripción expandible
-        const readMoreBtn = document.querySelector('.read-more-btn');
-        const descriptionText = document.querySelector('.description-text');
-
-        readMoreBtn.addEventListener('click', function(e) {
-            e.stopPropagation();
-            descriptionText.classList.toggle('expanded');
-            this.textContent = descriptionText.classList.contains('expanded') ? 'Leer menos' : 'Leer más';
-        });
-
-        // ... (resto del JavaScript existente se mantiene igual) ...
-    </script>
-</body>
- <style>
-        /* ... (estilos anteriores se mantienen igual) ... */
 
         .hot-button-container {
             text-align: center;
-            margin-top:0px
+            margin-top: 20px;
         }
 
         .hot-button {
@@ -360,7 +313,7 @@
             color: white;
             border: none;
             padding: 18px 35px;
-            margin: 0px auto 0px;
+            margin: 20px auto;
             cursor: pointer;
             border-radius: 35px;
             font-size: 25px;
@@ -387,10 +340,6 @@
         .hot-button:hover {
             transform: translateY(-3px);
             box-shadow: 0 6px 20px rgba(255,107,107,0.4);
-        }
-
-        .hot-button.active {
-            background: linear-gradient(145deg, #ff8e8e, #ff6b6b);
         }
 
         .hot-offer {
@@ -425,148 +374,151 @@
             color: #ff6b6b;
             font-size: 1.1em;
         }
-    .gif-container {
-    text-align: center;
-    margin: 50px auto;
-    max-width: 600px;
-    padding: 10px;
-}
 
-.animated-gif {
-    width: 100%;
-    max-width: 500px;
-    border-radius: 15px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-    border: 2px solid #80cbc4;
-}
+        @media (max-width: 768px) {
+            .service-button {
+                width: 100%;
+                max-width: 280px;
+            }
+            
+            .service-description {
+                width: 90%;
+            }
+
+            .social-buttons a {
+                width: 45px;
+                height: 45px;
+                font-size: 20px;
+                margin: 0 8px;
+            }
+
+            .address-section {
+                margin: 30px 15px;
+                padding: 20px;
+            }
+            
+            .address-text {
+                font-size: 1em;
+            }
+            
+            .map-link {
+                padding: 10px 15px;
+                font-size: 0.85em;
+            }
+
+            .header-container h1 {
+                font-size: 1.8em;
+            }
+            
+            .header-container h2 {
+                font-size: 1.4em;
+            }
+
+            .hot-button {
+                font-size: 20px;
+                padding: 15px 25px;
+            }
+
+            .whatsapp-button {
+                font-size: 0.9em;
+                padding: 10px 20px;
+            }
+        }
     </style>
 </head>
 <body>
-    <!-- ... (resto del cuerpo se mantiene igual hasta la sección de servicios) ... -->
+    <div class="floating-button" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">
+        <i class="fas fa-arrow-up"></i>
+    </div>
+
+    <div class="header-container">
+        <div class="logo-container">
+            <img src="https://i.ibb.co/7dbFTMkV/logo-circular.png" alt="Logo Shalom" class="logo">
+        </div>
+        <h1>Fisioterapeuta</h1>
+        <h2>𝒀𝒆𝒊𝒎𝒎𝒚 𝑺𝒊𝒍𝒗𝒂</h2>
+        <p class="slogan">Transformando tu salud a través del cuidado terapéutico integral</p>
+    </div>
 
     <div class="content-container">
-        <div class="services">
-            <!-- Botón Hot agregado aquí -->
-            <div class="hot-button-container">
-                <button class="hot-button">OFERTA PREMIUM</button>
-                <div class="hot-offer">
-                    <div class="hot-offer-content">
-                        <h3>¡**PAQUETE PREMIUM DE 10 SESIONES**  !</h3>
-                        <p> <strong>*Incluye servicios exclusivos:* </strong> 
-<p>😱✨<h3>**BONO EXTRA:**</h3>
-    <p><strong>¡1 sesión gratuita de regalo! (🎁)</strong>
-<div style="text-align: left; padding: 0; margin: 0;">
-  <p>✔️ Masajes terapéuticos</p>
-  <p>✔️ Masajes descontracturantes</p>
-  <p>✔️ Masajes relajantes</p>
-  <p>✔️ Reflexología</p>
-  <p>✔️ Limpieza facial</p>
-</div>
-                        <ul style="list-style: none; padding: 0;">
-                            <li><strong>(10 sesiones por el precio de ((S/600🎰))</strong>
-                            <p>  <h3>**BENEFICIOS ESCLUSIVOS**</h3></li>
-                             <div style="text-align: left; padding: 0; margin: 0;">
-                            <li>✅ Atención personalizada a domicilio🚖
-                            <li>✅ Servicios para toda la familia  
-                            <li>✅ Combina terapias en cada sesión  
-                            <li>✅ Validez flexible del paquete
-                        </ul>
-                        <p>💲 <strong> 📲 **Reserva ahora mismo **  :</<
-                        <p>⏳ *Promoción válida por tiempo limitado*</p>
-                        <button onclick="window.location.href='https://wa.me/51973834229?text=¡Quiero%20el%20Paquete%20HOT!%20'" 
-                                style="background: #ff6b6b; color: white; border: none; padding: 10px 25px; border-radius: 20px; margin-top: 15px; cursor: pointer;">
-                            ¡QUIERO ESTA OFERTA!
-                        </button>
+        <div class="description-container">
+            <div class="description-text">
+                <h2 style="color: #4db6ac; margin-top: 0;">Shalom - Masajes Terapéuticos Especializados en Bienestar Muscular</h2>
+                <p>En Shalom, entendemos que el cuerpo trabaja día a día, y los músculos merecen atención profesional para recuperar su vitalidad. Nos enfocamos en aliviar tensiones, liberar contracturas y mejorar la funcionalidad muscular, utilizando técnicas terapéuticas diseñadas para devolverle a tu cuerpo la fuerza y flexibilidad que necesita.</p>
+                
+                <div class="expandable-content">
+                    <h3 style="color: #4db6ac;">Beneficios Clave de Nuestros Masajes:</h3>
+                    <ul>
+                        <li>✔️ <strong>Alivio de Dolores Musculares:</strong> Tratamos zonas sobrecargadas por el estrés, malas posturas o actividad física intensa.</li>
+                        <li>✔️ <strong>Recuperación Acelerada:</strong> Ideal para deportistas: reducimos rigidez y favorecemos reparación de tejidos.</li>
+                        <li>✔️ <strong>Mejora de la Movilidad:</strong> Liberamos adherencias y aumentamos el rango de movimiento.</li>
+                        <li>✔️ <strong>Prevención de Lesiones:</strong> Trabajamos en elasticidad muscular y correcta alineación.</li>
+                    </ul>
+                    
+                    <p>Combinamos métodos como masaje descontracturante, técnicas de liberación miofascial y estiramientos asistidos, adaptándonos a tus necesidades específicas.</p>
+                    
+                    <p>¿Listo para sentir la diferencia? Agenda tu sesión en Shalom y transforma el cuidado muscular en una prioridad. Porque un cuerpo sin tensiones es sinónimo de vida en plenitud.</p>
+                </div>
+            </div>
+            <button class="read-more-btn">Leer más</button>
+        </div>
+
+        <div class="hot-button-container">
+            <button class="hot-button">OFERTA PREMIUM</button>
+            <div class="hot-offer">
+                <div class="hot-offer-content">
+                    <h3>¡**PAQUETE PREMIUM DE 10 SESIONES**  !</h3>
+                    <p> <strong>*Incluye servicios exclusivos:* </strong></p>
+                    <p>😱✨<h3>**BONO EXTRA:**</h3></p>
+                    <p><strong>¡1 sesión gratuita de regalo! (🎁)</strong></p>
+                    <div style="text-align: left; padding: 0; margin: 0;">
+                        <p>✔️ Masajes terapéuticos</p>
+                        <p>✔️ Masajes descontracturantes</p>
+                        <p>✔️ Masajes relajantes</p>
+                        <p>✔️ Reflexología</p>
+                        <p>✔️ Limpieza facial</p>
                     </div>
-                
-         <!-- ... (resto del contenido se mantiene igual) ... -->
-    </div>
- <script>
-        // Control de Hot Button
-        const hotButton = document.querySelector('.hot-button');
-        const hotOffer = document.querySelector('.hot-offer');
+                    <ul style="list-style: none; padding: 0;">
+                        <li><strong>(10 sesiones por el precio de ((S/600🎰))</strong></li>
+                        <p><h3>**BENEFICIOS ESCLUSIVOS**</h3></p>
+                        <div style="text-align: left; padding: 0; margin: 0;">
+                            <li>✅ Atención personalizada a domicilio🚖</li>
+                            <li>✅ Servicios para toda la familia</li>
+                            <li>✅ Combina terapias en cada sesión</li>
+                            <li>✅ Validez flexible del paquete</li>
+                        </div>
+                    </ul>
+                    <p>💲 <strong> 📲 **Reserva ahora mismo **  :</strong></p>
+                    <p>⏳ *Promoción válida por tiempo limitado*</p>
+                    <button onclick="window.location.href='https://wa.me/51973834229?text=¡Quiero%20el%20Paquete%20HOT!%20'" 
+                            style="background: #ff6b6b; color: white; border: none; padding: 10px 25px; border-radius: 20px; margin-top: 15px; cursor: pointer;">
+                        ¡QUIERO ESTA OFERTA!
+                    </button>
+                </div>
+            </div>
+        </div>
 
-        hotButton.addEventListener('click', function(e) {
-            e.stopPropagation();
-            const isActive = this.classList.toggle('active');
-            hotOffer.style.display = isActive ? 'block' : 'none';
-            
-            if(isActive) {
-                document.querySelectorAll('.service-description').forEach(desc => {
-                    desc.style.display = 'none';
-                });
-                document.querySelectorAll('.service-button').forEach(btn => {
-                    btn.classList.remove('active');
-                });
-                hotOffer.scrollIntoView({ behavior: 'smooth', block: 'start' });
-            }
-        });
-
-        // Modificación al control de servicios existente
-        document.querySelectorAll('.service-button').forEach(button => {
-            button.addEventListener('click', function(e) {
-                e.stopPropagation();
-                const serviceId = this.dataset.service;
-                const description = document.getElementById(serviceId);
-                
-                document.querySelectorAll('.service-description').forEach(desc => {
-                    desc.style.display = 'none';
-                });
-                
-                document.querySelectorAll('.service-button').forEach(btn => {
-                    btn.classList.remove('active');
-                });
-
-                hotButton.classList.remove('active');
-                hotOffer.style.display = 'none';
-
-                if(description.style.display === 'none') {
-                    description.style.display = 'block';
-                    this.classList.add('active');
-                    description.scrollIntoView({ behavior: 'smooth', block: 'start' });
-                }
-            });
-        });
-
-        // Cerrar todo al hacer clic fuera (actualizado)
-        document.addEventListener('click', () => {
-            document.querySelectorAll('.service-description').forEach(desc => {
-                desc.style.display = 'none';
-            });
-            document.querySelectorAll('.service-button').forEach(btn => {
-                btn.classList.remove('active');
-            });
-            hotButton.classList.remove('active');
-            hotOffer.style.display = 'none';
-        });
-
-        // ... (resto del JavaScript previo se mantiene igual) ...
-    </script>
-</body>
-</html>
         <div class="services">
             <button class="service-button" data-service="servicio1">
                 ✨Masaje Terapéutico
             </button>
             <div id="servicio1" class="service-description">
                 <h3>Terapia Manual Profesional</h3>
-                <p>Masaje Terapéutico
- <li>Enfocado en aliviar dolencias específicas (lesiones, posturas incorrectas o molestias crónicas).
- <li>Combina técnicas para mejorar la movilidad, reducir dolor y restaurar el equilibrio muscular.</p>
-💥Ideal para:
-
-Tratar contracturas, rigidez o inflamación.
-
-Recuperar el rango de movimiento.
-
-Complementar tratamientos médicos.</p>
-                    
- 🎁Sesión desde S/ 80 la hora.</p>
-<li>¡Pregunta por nuestros packs o descuentos para sesiones recurrentes!"
-
-"(💲✨🔥)<p>¿Necesitas más de una sesión? Consúltanos hoy y te armamos un plan con beneficios exclusivos."</p>
-
- <li>⏳ ¡No esperes más!.</p>
+                <p>Masaje Terapéutico</p>
+                <ul>
+                    <li>Enfocado en aliviar dolencias específicas (lesiones, posturas incorrectas o molestias crónicas).</li>
+                    <li>Combina técnicas para mejorar la movilidad, reducir dolor y restaurar el equilibrio muscular.</li>
+                </ul>
+                <p>💥Ideal para:</p>
+                <ul>
+                    <li>Tratar contracturas, rigidez o inflamación.</li>
+                    <li>Recuperar el rango de movimiento.</li>
+                    <li>Complementar tratamientos médicos.</li>
+                </ul>
+                <p>🎁Sesión desde S/ 80 la hora.</p>
+                <p>¡Pregunta por nuestros packs o descuentos para sesiones recurrentes!</p>
+                <p>"(💲✨🔥)¿Necesitas más de una sesión? Consúltanos hoy y te armamos un plan con beneficios exclusivos."</p>
+                <p>⏳ ¡No esperes más!.</p>
             </div>
 
             <button class="service-button" data-service="servicio2">
@@ -574,43 +526,42 @@ Complementar tratamientos médicos.</p>
             </button>
             <div id="servicio2" class="service-description">
                 <h3>Recuperación Funcional</h3>
-                <p>Masaje Relajante
-               <li>Busca liberar estrés físico y mental mediante movimientos suaves y ritmos armoniosos,
-               perfecto para desconectar y renovar energía.
+                <p>Masaje Relajante</p>
+                <ul>
+                    <li>Busca liberar estrés físico y mental mediante movimientos suaves y ritmos armoniosos, perfecto para desconectar y renovar energía.</li>
+                </ul>
                 <p>✅Beneficios:</p>
-
-                <li>Reduce ansiedad y mejora el sueño.
-                <li>Estimula la circulación y el sistema linfático.
-
-Revitaliza cuerpo y mente en sesiones cortas.
-                    <li>🎁Sesión desde S/ 80 la hora.</li>¡Pregunta por nuestros packs o descuentos para sesiones recurrentes!"
-
-                    <p>"(💲✨🔥)¿Necesitas más de una sesión? Consúltanos hoy y te armamos un plan con beneficios exclusivos."</p>
-                      <p>⏳ ¡No esperes más!</p>
+                <ul>
+                    <li>Reduce ansiedad y mejora el sueño.</li>
+                    <li>Estimula la circulación y el sistema linfático.</li>
+                    <li>Revitaliza cuerpo y mente en sesiones cortas.</li>
+                </ul>
+                <p>🎁Sesión desde S/ 80 la hora.</p>
+                <p>"(💲✨🔥)¿Necesitas más de una sesión? Consúltanos hoy y te armamos un plan con beneficios exclusivos."</p>
+                <p>⏳ ¡No esperes más!</p>
             </div>
 
             <button class="service-button" data-service="servicio3">
-                ✨Masajes Facial con equipo de Alta Frecuencia.
+                ✨Masajes Facial con equipo de Alta Frecuencia
             </button>
             <div id="servicio3" class="service-description">
                 <h3>Terapia de Relajación</h3>
-               
-                <li>Facial con Equipo de Alta Frecuencia <p>
-                 <li> Técnica no invasiva que usa corriente eléctrica de alta frecuencia para estimular la piel.</li>
-                 <li> Ideal para rejuvenecer, oxigenar tejidos y tratar acné o poros dilatados.</li>
-                    
-                    <p>✅ Efectos clave:</p>
-
-                    <li>Mejora tono y elasticidad facial.
-                    <li>Reduce imperfecciones y brinda luminosidad.
-                     <p>Sesiones rápidas y sin molestias.
-                    <strong>Sesión desde S/ 80 la hora.</strong>
-    ¡Pregunta por nuestros packs 🎁 o descuentos para sesiones recurrentes!"
-
-                         <p>"(💲✨🔥)¿Necesitas más de una sesión?</p>
-                         Consúltanos hoy y te armamos un plan con beneficios exclusivos."
-
-                         <p>⏳ ¡No esperes más!</p>
+                <ul>
+                    <li>Facial con Equipo de Alta Frecuencia</li>
+                    <li>Técnica no invasiva que usa corriente eléctrica de alta frecuencia para estimular la piel.</li>
+                    <li>Ideal para rejuvenecer, oxigenar tejidos y tratar acné o poros dilatados.</li>
+                </ul>
+                <p>✅ Efectos clave:</p>
+                <ul>
+                    <li>Mejora tono y elasticidad facial.</li>
+                    <li>Reduce imperfecciones y brinda luminosidad.</li>
+                </ul>
+                <p>Sesiones rápidas y sin molestias.</p>
+                <p><strong>Sesión desde S/ 80 la hora.</strong></p>
+                <p>¡Pregunta por nuestros packs 🎁 o descuentos para sesiones recurrentes!"</p>
+                <p>"(💲✨🔥)¿Necesitas más de una sesión?</p>
+                <p>Consúltanos hoy y te armamos un plan con beneficios exclusivos."</p>
+                <p>⏳ ¡No esperes más!</p>
             </div>
 
             <button class="service-button" data-service="servicio4">
@@ -618,130 +569,13 @@ Revitaliza cuerpo y mente en sesiones cortas.
             </button>
             <div id="servicio4" class="service-description">
                 <h3>Terapia de Zonas Reflejas</h3>
-                <p>Masaje Descontracturante
-                    <li>Trabaja capas musculares profundas para liberar nudos de tensión (espalda, cuello, hombros). 
-                    <li>Presión controlada y técnicas localizadas.
-                    <p>✅ Recomendado para:</p>
-                    <li>Aliviar dolores por estrés o sobrecarga.
-                    <li>Corregir posturas dañinas.
-                    <li>Recuperar flexibilidad rápidamente.
-                    <p>🎁Sesión desde S/ 80 la hora.<p/>
-                    <li>¡Pregunta por nuestros packs o descuentos para sesiones recurrentes!"
-                    <p>"(💲✨🔥)¿Necesitas más de una sesión? Consúltanos hoy y te armamos un plan con beneficios exclusivos."</p>
-                    <p>⏳ ¡No esperes más!</p>
-            </div>
-
-            <button class="service-button" data-service="servicio5">
-                 ✨Masaje deportivo
-            </button>
-            <div id="servicio5" class="service-description">
-                <h3>Terapia de Drenaje</h3>
-                <p>Masaje Deportivo:</p>
-                <p> Optimiza tu Rendimiento💪</p>
-                <li>Técnica terapéutica enfocada en prevenir lesiones, acelerar la recuperación muscular y potenciar el rendimiento físico⛹️.</li>
-                <li>Ideal para deportistas y personas activas.</li>
-                <p>¿Por qué usarlo?</p>
-                <li>✅ Reduce tensiones y mejora flexibilidad.</li>
-                <li>✅ Acelera la recuperación post-entreno.</li>
-                <li>✅ Prepara músculos antes del esfuerzo.</li>
-                <li>✅ Alivia el estrés físico y mental.</li>
-                <p>🎁Sesión desde S/ 80 la hora. </p>
-                <li>¡Pregunta por nuestros packs o descuentos para sesiones recurrentes!"</li>
-
-                <li>"(💲✨🔥)¿Necesitas más de una sesión? Consúltanos hoy y te armamos un plan con beneficios exclusivos."</li>
-                <p>⏳ ¡No esperes más!</p>
-            </div>
-
-            <button class="service-button" data-service="servicio6">
-                ✨ Terapia y Rehabilitacion
-            </button>
-            <div id="servicio6" class="service-description">
-                <h3>Terapia con Ventosas</h3>
-                <p>Terapia de Rehabilitación
-                <li>Programas personalizados para recuperar fuerza.</li>
-                <li>💪movilidad y funcionalidad tras lesiones🚶‍♀️, cirugías o eventos traumáticos.
-                <p>✅ Incluye:</p>
-
-                <li>Ejercicios guiados y masajes especializados.</li>
-                <li>Uso de tecnología (ultrasonido, electroestimulación).</li>
-                <li>Seguimiento con fisioterapeutas certificados.</li>
-                <p>🎁Sesión desde S/ 80 la hora.</p>
-                <li>¡Pregunta por nuestros packs o descuentos para sesiones recurrentes!"</li>
-                 <p>"(💲✨🔥)¿Necesitas más de una sesión?</p>
-                <li> Consúltanos hoy y te armamos un plan con beneficios exclusivos."</li>
-                <p>⏳ ¡No esperes más! </p>
-            </div>
-        </div>
-
-        <div class="gallery">
-            <img src="https://i.ibb.co/WvkDrPs9/IMG-20240306-WA0043.jpg" 
-                 alt="Sesión de masaje terapéutico">
-            <img src="https://i.ibb.co/tThcRDHX/Screenshot-20240614-193758-3.png" 
-                 alt="Equipo profesional">
-            <img src="https://i.ibb.co/q3GfgG5r/IMG-20240226-WA0143.jpg" 
-                 alt="Sala de tratamiento">
-            <img src="https://i.ibb.co/RTcY6BXd/Screenshot-20240614-193724-3.png" 
-                 alt="Técnicas avanzadas">
-        </div>
-
-        <div class="social-buttons">
-            <a href="https://www.facebook.com/share/1BXPggLbpp/" target="_blank" class="facebook">
-                <i class="fab fa-facebook-f"></i>
-            </a>
-            <a href="https://www.instagram.com/yeimmycoromoto_silva__?utm_source=qr&igsh=Y2l5YnR4Y2RvdTJv" target="_blank" class="instagram">
-                <i class="fab fa-instagram"></i>
-            </a>
-            <a href="TU_ENLACE_TIKTOK" target="_blank" class="tiktok">
-                <i class="fab fa-tiktok"></i>
-            </a>
-        </div>
-
-        <a href="https://wa.me/51973834229?text=¡Hola!%20Bienvenido%20a%20SHALOM.%20¿En%20qué%20podemos%20ayudarle%20hoy?" 
-           class="whatsapp-button" 
-           target="_blank">
-            <i class="fab fa-whatsapp"></i> Agendar ahora
-        </a>
-    </div>
-
-    <script>
-        // Control de servicios
-        document.querySelectorAll('.service-button').forEach(button => {
-            button.addEventListener('click', function(e) {
-                e.stopPropagation();
-                const serviceId = this.dataset.service;
-                const description = document.getElementById(serviceId);
-                
-                document.querySelectorAll('.service-description').forEach(desc => {
-                    desc.style.display = 'none';
-                });
-                
-                document.querySelectorAll('.service-button').forEach(btn => {
-                    btn.classList.remove('active');
-                });
-
-                if(description.style.display === 'none') {
-                    description.style.display = 'block';
-                    this.classList.add('active');
-                    description.scrollIntoView({ behavior: 'smooth', block: 'start' });
-                }
-            });
-        });
-
-        // Cerrar descripciones al hacer clic fuera
-        document.addEventListener('click', () => {
-            document.querySelectorAll('.service-description').forEach(desc => {
-                desc.style.display = 'none';
-            });
-            document.querySelectorAll('.service-button').forEach(btn => {
-                btn.classList.remove('active');
-            });
-        });
-
-        // Botón flotante
-        window.addEventListener('scroll', () => {
-            const floatingBtn = document.querySelector('.floating-button');
-            floatingBtn.style.display = window.scrollY > 300 ? 'flex' : 'none';
-        });
-    </script>
-</body>
-</html>
+                <p>Masaje Descontracturante</p>
+                <ul>
+                    <li>Trabaja capas musculares profundas para liberar nudos de tensión (espalda, cuello, hombros).</li>
+                    <li>Presión controlada y técnicas localizadas.</li>
+                </ul>
+                <p>✅ Recomendado para:</p>
+                <ul>
+                    <li>Aliviar dolores por estrés o sobrecarga.</li>
+                    <li>Corregir posturas dañinas.</li>
+                    <li>Recuperar flexibil
